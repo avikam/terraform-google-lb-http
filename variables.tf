@@ -155,6 +155,12 @@ variable "ssl_certificates" {
   default     = []
 }
 
+variable "managed_ssl_certificates_domains" {
+  description = "Managed certificates names"
+  type        = list(string)
+  default     = []
+}
+
 variable "security_policy" {
   description = "The resource URL for the security policy to associate with the backend service"
   type        = string
